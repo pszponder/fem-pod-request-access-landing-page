@@ -6,7 +6,11 @@
 /* VARIABLES */
 /* ========= */
 
+/* Import Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
+
 :root {
+  --color-bg: #121725;
   --color-h1-text: #fff;
   --color-h1-icon: #54e6af;
   --color-text-h2: #54e6af;
@@ -24,8 +28,20 @@
 /* ===== */
 
 body {
+  font-family: "Chivo", sans-serif;
+
+  background-color: var(--color-bg);
+
   /* Add flex container to body to center the app */
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  /* Add flex container to app to center contents */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -34,15 +50,31 @@ body {
 /* HEADER */
 /* ====== */
 
-/* HEADING */
-
-/* SPAN */
+.header {
+  display: flex;
+  align-items: center;
+}
 
 /* ==== */
 /* TEXT */
 /* ==== */
 
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text__heading,
+.text__description {
+  text-align: center;
+}
+
 /* HEADING */
+.text__heading {
+  text-transform: uppercase;
+  color: var(--color-text-h2);
+}
 
 /* DESCRIPTION */
 
