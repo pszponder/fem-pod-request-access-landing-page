@@ -23,6 +23,13 @@
 /*  APP  */
 /* ===== */
 
+body {
+  /* Add flex container to body to center the app */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ====== */
 /* HEADER */
 /* ====== */
