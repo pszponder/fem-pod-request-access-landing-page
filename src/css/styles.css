@@ -11,10 +11,8 @@
 
 :root {
   --color-bg: #121725;
-  --color-h1-text: #fff;
-  --color-h1-icon: #54e6af;
-  --color-text-h2: #54e6af;
-  --color-text-h2-alt: #fff;
+  --color-text-heading: #54e6af;
+  --color-text-heading-alt: #fff;
   --color-text-content: #c2cbe5;
   --color-icons-bg: #5a668a;
   --color-input-bg: #2c344b;
@@ -55,6 +53,16 @@ body {
   align-items: center;
 }
 
+/* ============ */
+/* MAIN CONTENT */
+/* ============ */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ==== */
 /* TEXT */
 /* ==== */
@@ -73,10 +81,18 @@ body {
 /* HEADING */
 .text__heading {
   text-transform: uppercase;
-  color: var(--color-text-h2);
+  color: var(--color-text-heading);
+  font-weight: 400;
+}
+
+.text__heading span {
+  color: var(--color-text-heading-alt);
 }
 
 /* DESCRIPTION */
+.text__description {
+  color: var(--color-text-content);
+}
 
 /* ===== */
 /* ICONS */
