@@ -1,0 +1,26 @@
+/* ========= */
+/* RESET CSS */
+/* ========= */
+
+html {
+  box-sizing: border-box;
+
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  /* Reset font size back to 16px default but in terms of rem */
+  font-size: 1.6rem;
+
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
