@@ -9,14 +9,14 @@
 /* Import Font Family */
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
 
+/* Declare CSS Variables */
 :root {
   --color-bg: #121725;
   --color-text-heading: #54e6af;
   --color-text-heading-alt: #fff;
   --color-text-content: #c2cbe5;
-  --color-icons-bg: #5a668a;
   --color-input-bg: #2c344b;
-  --color-input-text: #979797;
+  --color-input-text: #fff;
   --color-button-bg: #54e6af;
   --color-button-text: #121725;
 }
@@ -26,17 +26,40 @@
 /* ===== */
 
 body {
+  position: relative;
   font-family: "Chivo", sans-serif;
-
-  background-color: var(--color-bg);
 
   /* Add flex container to body to center the app */
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* Add a background color to darken the opaque background image */
+  background-color: var(--color-bg);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  /* Prevent Image from Collapsing */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Add the background image*/
+  background-image: url("../../assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Add opacity to the background image */
+  opacity: 0.1;
 }
 
 .app {
+  /* Set relative position so that absolute position backgroun image on ::before element won't go above the app */
+  position: relative;
+  width: 32.7rem;
+
   /* Add flex container to app to center contents */
   display: flex;
   flex-direction: column;
@@ -49,8 +72,11 @@ body {
 /* ====== */
 
 .header {
-  display: flex;
-  align-items: center;
+  margin-bottom: 5.7rem;
+}
+
+.header__img {
+  height: 5.6rem;
 }
 
 /* ============ */
@@ -76,13 +102,16 @@ body {
 .text__heading,
 .text__description {
   text-align: center;
+  font-weight: 400;
 }
 
 /* HEADING */
 .text__heading {
   text-transform: uppercase;
   color: var(--color-text-heading);
-  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .text__heading span {
@@ -92,16 +121,68 @@ body {
 /* DESCRIPTION */
 .text__description {
   color: var(--color-text-content);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 3.3rem;
 }
 
 /* ===== */
 /* ICONS */
 /* ===== */
+.icons {
+  margin-bottom: 4.8rem;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 1.5rem;
+}
 
 /* ====== */
 /* INPUTS */
 /* ====== */
 
+.inputs {
+  /* flex-grow: 1; */
+  min-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs__input,
+.inputs__submit {
+  min-width: 100%;
+  /* flex-grow: 1; */
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  padding: 0.9rem 2em;
+  border: 0.2rem solid var(--color-input-bg);
+  border-radius: 3rem;
+}
+
 /* INPUT */
+.inputs__input {
+  color: var(--color-input-text);
+  background-color: var(--color-input-bg);
+  margin-bottom: 1.6rem;
+}
+
+.inputs__input::placeholder {
+  /* Change color and opacity of placeholder text */
+  color: var(--color-input-text);
+  opacity: 0.5;
+}
 
 /* BUTTON */
+.inputs__submit {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  text-transform: capitalize;
+  cursor: pointer;
+}
