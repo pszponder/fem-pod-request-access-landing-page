@@ -1,0 +1,52 @@
+/* ============ */
+/* MOBILE FIRST */
+/* ============ */
+
+/* ========= */
+/* VARIABLES */
+/* ========= */
+
+:root {
+  --color-h1-text: #fff;
+  --color-h1-icon: #54e6af;
+  --color-text-h2: #54e6af;
+  --color-text-h2-alt: #fff;
+  --color-text-content: #c2cbe5;
+  --color-icons-bg: #5a668a;
+  --color-input-bg: #2c344b;
+  --color-input-text: #979797;
+  --color-button-bg: #54e6af;
+  --color-button-text: #121725;
+}
+
+/* ===== */
+/*  APP  */
+/* ===== */
+
+/* ====== */
+/* HEADER */
+/* ====== */
+
+/* HEADING */
+
+/* SPAN */
+
+/* ==== */
+/* TEXT */
+/* ==== */
+
+/* HEADING */
+
+/* DESCRIPTION */
+
+/* ===== */
+/* ICONS */
+/* ===== */
+
+/* ====== */
+/* INPUTS */
+/* ====== */
+
+/* INPUT */
+
+/* BUTTON */
