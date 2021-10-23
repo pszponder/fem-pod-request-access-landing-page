@@ -278,7 +278,6 @@ body {
   .text__heading,
   .text__description {
     text-align: left;
-    font-weight: 300;
   }
 
   .text__heading {
@@ -355,3 +354,77 @@ body {
 /* ==================== */
 /* MEDIA QUERY: DESKTOP */
 /* ==================== */
+@media (min-width: 1400px) {
+  /* ==== */
+  /* BODY */
+  /* ==== */
+  /* Update background image to desktop version */
+  body {
+    /* Add the background image*/
+    background-image: url("../../assets/desktop/image-host.jpg");
+    background-size: 88.8rem 64rem;
+    background-position: center right;
+  }
+
+  /* ===== */
+  /*  APP  */
+  /* ===== */
+
+  .app {
+    /* width: 76.8rem; */
+
+    /* Offset all elements from the left edge */
+    margin-left: 16.5rem;
+  }
+
+  /* ====== */
+  /* HEADER */
+  /* ====== */
+  .header {
+    margin-top: 10.2rem;
+    margin-bottom: 10.3rem;
+  }
+
+  /* ============ */
+  /* MAIN CONTENT */
+  /* ============ */
+  .content {
+    min-width: 72.3rem;
+  }
+
+  /* ==== */
+  /* TEXT */
+  /* ==== */
+  .text {
+    margin-top: 8.8rem;
+  }
+
+  .text__heading {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  /* ===== */
+  /* ICONS */
+  /* ===== */
+
+  /* ====== */
+  /* INPUTS */
+  /* ====== */
+
+  .inputs {
+    margin-bottom: 6.4rem;
+  }
+
+  /* ========== */
+  /* DOT MATRIX */
+  /* ========== */
+  #dots {
+    display: block;
+    position: absolute;
+    margin-left: 3.9rem;
+    right: 0;
+    bottom: 7.8rem;
+  }
+}
