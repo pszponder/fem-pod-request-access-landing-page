@@ -207,7 +207,7 @@ label[for="text-input"] {
   font-weight: bold;
   position: absolute;
   bottom: -3.5rem;
-  left: 6rem;
+  left: 3rem;
   color: red;
   display: none;
 }
@@ -354,7 +354,6 @@ label[for="text-input"] {
 
   label[for="text-input"] {
     bottom: -1rem;
-    left: 3rem;
   }
 
   .inputs__submit {
