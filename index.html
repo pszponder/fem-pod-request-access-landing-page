@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="./src/js/script.js" defer></script>
 
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
@@ -63,14 +64,16 @@
         </section>
         <!-- INPUT & BUTTON -->
         <section class="inputs">
-          <label for="text-input"></label>
-          <input
-            class="inputs__input"
-            id="text-input"
-            type="text"
-            placeholder="Email address"
-          />
-          <button class="inputs__submit">request access</button>
+          <form>
+            <input
+              class="inputs__input"
+              id="text-input"
+              type="text"
+              placeholder="Email address"
+            />
+            <label class="inputs__label" for="text-input"></label>
+            <button class="inputs__submit">request access</button>
+          </form>
         </section>
       </main>
     </div>
