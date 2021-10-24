@@ -234,8 +234,8 @@ label[for="text-input"] {
 
   /* Remove pseudo-element with transparent overlay */
   body::before {
-    /* content: none; */
-    background-color: hsla(224deg, 35%, 11%, 0.2);
+    content: none;
+    /* background-color: hsla(224deg, 35%, 11%, 0.2); */
   }
 
   body {
