@@ -160,6 +160,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
 }
 
 .inputs__input,
@@ -174,6 +176,10 @@ body {
   outline: none;
   border: none;
   border-radius: 3rem;
+}
+
+form {
+  position: relative;
 }
 
 /* INPUT */
@@ -195,6 +201,15 @@ body {
   color: var(--color-button-text);
   text-transform: capitalize;
   cursor: pointer;
+}
+
+label[for="text-input"] {
+  font-weight: bold;
+  position: absolute;
+  bottom: -3.5rem;
+  left: 6rem;
+  color: red;
+  display: none;
 }
 
 .inputs__submit:hover {
@@ -335,6 +350,11 @@ body {
   .inputs__input {
     border: 0.5rem solid var(--color-input-bg);
     min-width: 42.7rem;
+  }
+
+  label[for="text-input"] {
+    bottom: -1rem;
+    left: 3rem;
   }
 
   .inputs__submit {
